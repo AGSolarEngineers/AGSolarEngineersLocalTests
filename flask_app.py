@@ -22,8 +22,8 @@ db = SQLAlchemy(app)
 
 # region database
 
-class Comment(db.Model):
-    __tablename__ = "comments"
+class Component(db.Model):
+    __tablename__ = "components"
 
     id = db.Column(db.Integer, primary_key=True)
     idComponente = db.Column(db.Integer)
