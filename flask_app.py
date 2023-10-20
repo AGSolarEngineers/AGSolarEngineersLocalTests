@@ -26,6 +26,38 @@ class Comment(db.Model):
     __tablename__ = "comments"
 
     id = db.Column(db.Integer, primary_key=True)
+    idComponente = db.Column(db.Integer)
+    SupplyPoint	= db.Column(db.String(4096))
+    Categoria_Componente = db.Column(db.String(4096))
+    Descricao = db.Column(db.String(4096))
+    Marca = db.Column(db.String(4096))
+    Modelo = db.Column(db.String(4096))
+    UnidMedida = db.Column(db.String(4096))
+    Procedencia = db.Column(db.String(4096))
+    cdAntigo = db.Column(db.String(4096))
+    cdCRM = db.Column(db.Integer)
+    Preferencial = db.Column(db.String(4096))
+    Conexao = db.Column(db.String(4096))
+    Potencia = db.Column(db.Float)
+    CorrenteAC = db.Column(db.Float)
+    CorrenteDC = db.Column(db.Float)
+    TensaoAC = db.Column(db.Float)
+    TensaoDC = db.Column(db.Float)
+    Orientacao_mptt = db.Column(db.Integer)
+    Preco = db.Column(db.Float)
+    Qtd_Estoque = db.Column(db.Integer)
+    Inv_Requer_StringBox = db.Column(db.Boolean)
+    Cabo_AC_mm = db.Column(db.Integer)
+    StringBox_Qtd_InOut = db.Column(db.Integer)
+    Qtd_Disjuntores = db.Column(db.Integer)
+    Tensao_Primario = db.Column(db.Float)
+    Tensao_Secundario = db.Column(db.Float)
+    Status = db.Column(db.String(4096))
+
+class Comment(db.Model):
+    __tablename__ = "comments"
+
+    id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(4096))
 
 # endregion
